@@ -1,0 +1,32 @@
+@import "src/scss/variables";
+@import "src/scss/mixin";
+
+.button {
+  @include none-target;
+  width: 148px;
+  height: 36px;
+  border: 1px solid #39B54A;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  &:hover {
+    background: #39B54A;
+    color: white;
+  }
+}
+
+.btn-red {
+  border: 1px solid #FF0000;
+  &:hover {
+    background: #FF0000;
+    color: white;
+  }
+}
+
+.btn-blue {
+  border: 1px solid #0071BC;
+  &:hover {
+    background: #0071BC;
+    color: white;
+  }
+}

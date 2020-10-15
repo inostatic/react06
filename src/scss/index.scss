@@ -1,0 +1,70 @@
+@import "../components/Button/Button";
+@import "../components/Task/Task";
+@import "../components/Modal/Modal";
+
+@import "variables";
+@import "mixin";
+
+@font-face {
+  font-family: 'Conv_Roboto-Regular';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.eot');
+  src: local('☺'), url('../assets/fonts/Roboto/Roboto-Regular.woff') format('woff'), url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype'), url('../assets/fonts/Roboto/Roboto-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_Tahoma';
+  src: url('../assets/fonts/Tahoma/Tahoma.eot');
+  src: local('☺'), url('../assets/fonts/Tahoma/Tahoma.woff') format('woff'), url('../assets/fonts/Tahoma/Tahoma.ttf') format('truetype'), url('../assets/fonts/Tahoma/Tahoma.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.app {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  font-family: "Conv_Roboto-Regular";
+  .header {
+    @include none-target;
+    display: flex;
+    justify-content: space-between;
+    .header__title {
+      font-size: 32px;
+      line-height: 37px;
+      font-weight: bold;
+    }
+  }
+  .task-refactor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .task-refactor__header {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 37px;
+      margin-bottom: 2rem;
+    }
+    .task-refactor__text {
+      font-size: 14px;
+      line-height: 16px;
+      color: #4D4D4D;
+    }
+    .task-refactor__input {
+      background: $color1;
+      border-radius: 4px;
+      width: 400px;
+      height: 40px;
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+    .task-refactor__buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+

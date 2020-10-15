@@ -1,0 +1,38 @@
+@import "src/scss/variables";
+
+.task-list {
+  margin: 3rem 0;
+  font-family: 'Conv_Tahoma';
+  .task:first-child {
+    border-top: 1px solid $color2;
+  }
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  height: 42px;
+  border: 1px solid $color2;
+  border-top: none;
+  .task__title {
+    padding: 1rem;
+    width: 185px;
+    border-right: 1px solid $color2;
+  }
+  .task__content {
+    padding: 1rem;
+    width: 865px;
+    border-right: 1px solid $color2;
+  }
+  .task__buttons {
+    a {
+      padding-left: 0.75rem;
+      height: 22px;
+    }
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+}
