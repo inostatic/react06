@@ -1,8 +1,8 @@
 import React, {useState} from "react"
 import {useHistory} from "react-router-dom"
-import {Button} from "../components/Button/Button";
-import {changeTask, removeTask} from "../redux/reducer/action";
-import {useDispatch} from "react-redux";
+import {Button} from "../components/Button/Button"
+import {changeTask, removeTask} from "../redux/reducer/action"
+import {useDispatch} from "react-redux"
 
 export const TaskPage = ({location}) => {
     const dispatch = useDispatch()
@@ -10,6 +10,7 @@ export const TaskPage = ({location}) => {
     if (!location.state) {
         history.push('/')
     }
+
     const {id, title, number} = location.state ? location.state : {id: '', title: '', number: ''}
     const [newTitle, setNewTitle] = useState(title)
 

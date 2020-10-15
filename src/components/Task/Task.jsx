@@ -1,7 +1,9 @@
 import React from "react"
 import Layer from '../../assets/icon/Layer.jpg'
 import Vector from '../../assets/icon/Vector.jpg'
-import {Link} from "react-router-dom";
+import {Link} from "react-router-dom"
+import PropTypes from "prop-types"
+
 
 export const Task = ({number, id, title, setModalRemove}) => {
 
@@ -21,4 +23,11 @@ export const Task = ({number, id, title, setModalRemove}) => {
             </div>
         </div>
     )
+}
+
+Task.propTypes = {
+    number: PropTypes.number,
+    setModalRemove: PropTypes.func,
+    id: PropTypes.number,
+    title: PropTypes.string
 }

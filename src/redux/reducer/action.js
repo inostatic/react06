@@ -1,5 +1,5 @@
 import {FETCH_DATA, CREATE_TASK, REMOVE_TASK, CHANGE_TASK} from "./data"
-import {Axios} from "../../api/api";
+import {Axios} from "../../api/api"
 
 export const fetchData = () => async (dispatch) => {
     try {

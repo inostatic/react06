@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react"
-import {Button} from "../components/Button/Button";
-import {Task} from "../components/Task/Task";
-import {ModalCreate} from "../components/Modal/ModalCreate";
-import {ModalDelete} from "../components/Modal/ModalDelete";
-import {useDispatch, useSelector} from "react-redux";
-import {createTask, removeTask, fetchData} from "../redux/reducer/action";
+import {Button} from "../components/Button/Button"
+import {Task} from "../components/Task/Task"
+import {ModalCreate} from "../components/Modal/ModalCreate"
+import {ModalDelete} from "../components/Modal/ModalDelete"
+import {useDispatch, useSelector} from "react-redux"
+import {createTask, removeTask, fetchData} from "../redux/reducer/action"
 
 
 export const HomePage = () => {
